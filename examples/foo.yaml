@@ -1,0 +1,18 @@
+html:
+  - head:
+      - title: Empugn example
+      - link:
+          rel: stylesheet
+          href: foo.css
+      - script: |
+          alert('Hello, World');
+  - body:
+      - h1: Sole text child may be specified as-is
+      - p:
+          - "Separating links by "
+          - a:
+              href: https://google.com
+              target: _blank
+              children: space
+          - " may require quoting"
+      - div:
